@@ -1,0 +1,16 @@
+GET http://localhost:3000/users/
+###
+PUT  http://localhost:3000/users/abc HTTP/1.1
+content-type: application/json
+
+{
+    "authToken": "",
+}
+###
+POST http://localhost:3000/users/login HTTP/1.1
+content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "Admin123"
+}
